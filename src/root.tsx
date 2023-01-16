@@ -5,18 +5,12 @@ export default () => {
     <>
       <head>
         <meta charSet="utf-8" />
-        <title>Qwik Blank App</title>
+        <title>Qwik Wrap Balancer</title>
       </head>
       <body>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint,
-          eveniet?
-        </p>
+        <p>Qwik: A JavaScript framework reimagined for the edge.</p>
         <WrapBalancer>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint,
-            eveniet?
-          </p>
+          <p>Qwik: A JavaScript framework reimagined for the edge.</p>
         </WrapBalancer>
       </body>
     </>
