@@ -1,1 +1,1 @@
-export { WrapBalancer } from "./wrap-balancer";
+export { WrapBalancer } from "./components/wrap-balancer";

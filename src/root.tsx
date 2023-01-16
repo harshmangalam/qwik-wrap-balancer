@@ -1,4 +1,4 @@
-import { WrapBalancer } from "./wrap-balancer";
+import { WrapBalancer } from "./components/wrap-balancer";
 
 export default () => {
   return (
