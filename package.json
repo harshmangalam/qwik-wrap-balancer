@@ -1,6 +1,6 @@
 {
   "name": "qwikjs-wrap-balancer",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Simple Qwik Component That Makes Titles More Readable",
   "main": "./lib/index.qwik.mjs",
   "qwik": "./lib/index.qwik.mjs",
