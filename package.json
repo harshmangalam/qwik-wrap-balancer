@@ -1,7 +1,7 @@
 {
-  "name": "my-qwik-library-name",
-  "version": "0.0.1",
-  "description": "Create a reusable Qwik component library",
+  "name": "qwik-wrap-balancer",
+  "version": "0.1.0",
+  "description": "Simple Qwik Component That Makes Titles More Readable",
   "main": "./lib/index.qwik.mjs",
   "qwik": "./lib/index.qwik.mjs",
   "types": "./lib-types/index.d.ts",
@@ -16,6 +16,10 @@
     "lib",
     "lib-types"
   ],
+  "keywords": [
+    "qwik"
+  ],
+  "license": "MIT",
   "engines": {
     "node": ">=15.0.0"
   },
