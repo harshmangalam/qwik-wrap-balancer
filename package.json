@@ -1,10 +1,17 @@
 {
   "name": "qwikjs-wrap-balancer",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Simple Qwik Component That Makes Titles More Readable",
   "main": "./lib/index.qwik.mjs",
   "qwik": "./lib/index.qwik.mjs",
   "types": "./lib-types/index.d.ts",
+  "author": {
+    "email": "harshdev8218@gmail.com",
+    "name": "Harsh Mangalam"
+  },
+  "repository": {
+    "url": "https://github.com/harshmangalam/qwik-wrap-balancer"
+  },
   "exports": {
     ".": {
       "import": "./lib/index.qwik.mjs",
