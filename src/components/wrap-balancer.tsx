@@ -2,7 +2,7 @@ import {
   $,
   component$,
   Slot,
-  useClientEffect$,
+  useVisibleTask$,
   useSignal,
   type HTMLAttributes,
 } from "@builder.io/qwik";
@@ -49,8 +49,8 @@ export const WrapBalancer = component$((props: BalancerProps) => {
     const height = container?.clientHeight;
 
     // Synchronously do binary search and calculate the layout
-    let left: number = width / 2;
-    let right: number = width;
+    let left = (width as number) / 2;
+    let right = width as number;
     let middle: number;
 
     if (width) {
@@ -73,17 +73,21 @@ export const WrapBalancer = component$((props: BalancerProps) => {
     // the function.
     if (!wrapper["__wrap_o"]) {
       (wrapper["__wrap_o"] = new ResizeObserver(() => {
-        self.__wrap_b(0, +wrapper.dataset.brr, wrapper);
-      })).observe(container);
+        (self as any).__wrap_b(0, +(wrapper.dataset.brr as any), wrapper);
+      })).observe(container as HTMLElement);
     }
   });
 
-  useClientEffect$(({ track }) => {
+  useVisibleTask$(({ track }) => {
     track(() => ratio);
     track(() => wrapperRef.value);
     if (wrapperRef.value) {
       // Re-assign the function here as the component can be dynamically rendered, and script tag won't work in that case.
-      (self[SYMBOL_KEY] = relayout)("balancer", ratio, wrapperRef.value);
+      ((self as any)[SYMBOL_KEY] = relayout)(
+        "balancer",
+        ratio,
+        wrapperRef.value
+      );
     }
   });
 
