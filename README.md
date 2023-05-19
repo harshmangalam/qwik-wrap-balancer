@@ -5,21 +5,21 @@
 ## Install
 
 ```sh
-npm i qwik-wrap-balancer
+npm i qwikjs-wrap-balancer
 ```
 
 ```sh
-pnpm i qwik-wrap-balancer
+pnpm i qwikjs-wrap-balancer
 ```
 
 ```sh
-yarn add qwik-wrap-balancer
+yarn add qwikjs-wrap-balancer
 ```
 
 ## Usage
 
 ```js
-import { WrapBalancer } from "qwik-wrap-balancer";
+import { WrapBalancer } from "qwikjs-wrap-balancer";
 import { component$ } from "@builder.io/qwik";
 export default component$(() => {
   return (
