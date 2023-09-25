@@ -16,7 +16,7 @@ pnpm i qwikjs-wrap-balancer
 yarn add qwikjs-wrap-balancer
 ```
 
-## Usage
+## Example
 
 ```js
 import { WrapBalancer } from "qwikjs-wrap-balancer";
