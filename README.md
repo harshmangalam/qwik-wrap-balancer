@@ -16,6 +16,10 @@ pnpm i qwikjs-wrap-balancer
 yarn add qwikjs-wrap-balancer
 ```
 
+```sh
+bun install qwikjs-wrap-balancer
+```
+
 ## Example
 
 ```js
